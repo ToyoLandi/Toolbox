@@ -25,7 +25,7 @@ global:
   imageCredentials:
     create: true
     name: null
-    password: ""
+    password: 0dinNfri3nds!
     registry: registry.aquasec.com
     repositoryUriPrefix: registry.aquasec.com
     username: collin.spears@aquasec.com

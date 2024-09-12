@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aqua-csp-enforcer
+  namespace: aqua
+data:
+  AQUA_HEALTH_MONITOR_ENABLED: "true"
+  AQUA_INSTALL_PATH: "/var/lib/aquasec"
+  # AQUA_PRODUCT_PATH: "/opt/aquasec"
+  AQUA_SERVER: "e11d515bfb-gw.cloud.aquasec.com:443"
+  RESTART_CONTAINERS: "no"
+  AQUA_LOGICAL_NAME: "openshift-local-cspears"
+  AQUA_EXPRESS_MODE: "false"        # Change to true, to enable express mode deployment of enforcer
+  # AQUA_PUBLIC_KEY: "/opt/aquasec/ssl/aqua_enforcer.crt"
+  # AQUA_PRIVATE_KEY: "/opt/aquasec/ssl/aqua_enforcer.key"
+  # AQUA_ROOT_CA: "/opt/aquasec/ssl/rootCA.crt"
+  # AQUA_OCP_FULL_VERSION: <OCP version> #set this variable with the exact OCP version to allow accurate vulnerability scanning

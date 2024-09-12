@@ -1,0 +1,1 @@
+oc create secret docker-registry aqua-registry --docker-server=registry.aquasec.com --docker-username=collin.spears@aquasec.com --docker-password=0dinNfri3nds! --docker-email=collin.spears@aquasec.com -n aqua
