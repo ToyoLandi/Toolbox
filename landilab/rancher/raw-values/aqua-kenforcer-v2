@@ -124,7 +124,7 @@ global:
   imageCredentials:
     create: true
     name: aqua-registry
-    password: 0dinNfri3nds!
+    password: ""
     registry: registry.aquasec.com
     repositoryUriPrefix: registry.aquasec.com
     username: collin.spears@aquasec.com
