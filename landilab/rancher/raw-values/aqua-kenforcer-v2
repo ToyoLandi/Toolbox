@@ -1,0 +1,333 @@
+TLS:
+  enabled: false
+  privateKey_fileName: ''
+  publicKey_fileName: ''
+  rootCA_fileName: ''
+  secretName: ''
+  tls_verify: false
+affinity: {}
+aquaSecret:
+  create: true
+  kubeEnforcerToken: ke-token
+  name: aqua-kube-enforcer-token
+aqua_cache_expiration_period: '60'
+aqua_enable_cache: 'yes'
+certsSecret:
+  annotations: {}
+  autoGenerate: false
+  create: true
+  name: aqua-kube-enforcer-certs
+  serverCertificate: >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURtekNDQW9PZ0F3SUJBZ0lVRTZzMElPczRySDlhcDIwUXB6aGl0ZWJpdUNzd0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSTBNRFl4TXpJeE5EY3dPVm9ZRHpJeQpPVGd3TXpJNU1qRTBOekE1V2pBbU1TUXdJZ1lEVlFRRERCdGhjWFZoTFd0MVltVXRaVzVtYjNKalpYSXVZWEYxCllTNXpkbU13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Ntc3RaMVJ5a2FadzEKUGhjam1uT2dtSGxjWW1QMkIxSjhrYmlHSUdZUmMvT3dBN0dIZzhZbzlBNVYzZEN3RCt0aW5iKzFaTTRJejhjMApUci9yVHNVWnFnczdkVlpWbjdWeUJ6d2EvdTBZQkFxbWROQ0FOU1dSaG1WMmVkOTcyZmpQWjVWTVR4ZWw1M1djCk9hUEpFSXl5czYvSGkxZjA0eitaTzJkQVB1NWNQVnltbjVjVmhWc0ZJUWJWdGVMd1BKVjAzWW42MEo4YUltZVIKd3JsVW5BZzIrTHJxclc4aUxNZElKNkt1YTlwTDVpS0lCV2dJdWlpbC9kQXVOdGdHMWJ6aDRBY3NZTmNoeUhsbAovSUhUaTQzUHpVNU91SUFRWEdJc2hWR1A3ZXZ0NFFHcWJvMzRHQUhtSEQyRmxoaVo1cHh5NHVRZkxkcTRjWC9ZCm9FbjJYT2JGQWdNQkFBR2pnYzB3Z2Nvd0NRWURWUjBUQkFJd0FEQUxCZ05WSFE4RUJBTUNCZUF3SFFZRFZSMGwKQkJZd0ZBWUlLd1lCQlFVSEF3SUdDQ3NHQVFVRkJ3TUJNRkVHQTFVZEVRUktNRWlDRzJGeGRXRXRhM1ZpWlMxbApibVp2Y21ObGNpNWhjWFZoTG5OMlk0SXBZWEYxWVMxcmRXSmxMV1Z1Wm05eVkyVnlMbUZ4ZFdFdWMzWmpMbU5zCmRYTjBaWEl1Ykc5allXd3dIUVlEVlIwT0JCWUVGSzgxSlVLM1BseFdRc1Q0ZTBSRnJSOTVXZWRoTUI4R0ExVWQKSXdRWU1CYUFGSUprSGtnTlk3cmxvRTNVVVFVV1gzQ1hXOHluTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFDcwpEZllKZjEwY2hXajVvZkY4c0JHQXo2VjVFSmlVVTgvOGp5Um9Mb0UzVmRYcDRGZXVrMTFJWVJpZzZyN1lqOTlBCjEvcHA5L0lBUnduMW95bW9lZ2c4TWRaVWdBSkd5YTluZG8yZkN4VmtJeGNiRFN5enBHMlQ4RWJ4Qko2cnFXTDIKelVZd2pYZ01XRi9QVEoyNFJyQjlIUHQ2dFV3MXpkd3ZrL0NzdDErcy9UdWdCazhZV3RVV2ZMdTdKQnF0SGxGSQpPR2MyOHlOVmVWUC9mSmZPUExQRlc0MTlENHV3UHovcGFFR0lOeUFpQ002YUFCTllEb0VxNzM3SGxhNlNjSk5mCnRDWmFFVWNHanVqckxJRy90T0c5clRDYzl1WnplOGJkVWxRSy9Zc1ZsaUJHMUJIa3djZGlaRlpjdE9sRjNGbmMKRm9HNS9OMWJ6ZzFaSlJwWkN1bWIKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  serverKey: >-
+    LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ3Ntc3RaMVJ5a2FadzEKUGhjam1uT2dtSGxjWW1QMkIxSjhrYmlHSUdZUmMvT3dBN0dIZzhZbzlBNVYzZEN3RCt0aW5iKzFaTTRJejhjMApUci9yVHNVWnFnczdkVlpWbjdWeUJ6d2EvdTBZQkFxbWROQ0FOU1dSaG1WMmVkOTcyZmpQWjVWTVR4ZWw1M1djCk9hUEpFSXl5czYvSGkxZjA0eitaTzJkQVB1NWNQVnltbjVjVmhWc0ZJUWJWdGVMd1BKVjAzWW42MEo4YUltZVIKd3JsVW5BZzIrTHJxclc4aUxNZElKNkt1YTlwTDVpS0lCV2dJdWlpbC9kQXVOdGdHMWJ6aDRBY3NZTmNoeUhsbAovSUhUaTQzUHpVNU91SUFRWEdJc2hWR1A3ZXZ0NFFHcWJvMzRHQUhtSEQyRmxoaVo1cHh5NHVRZkxkcTRjWC9ZCm9FbjJYT2JGQWdNQkFBRUNnZ0VBR1U2azdDbjBCaU01OVJDQ2dnVGVXVGloNnFxK2IwOUpoOXd4eXZDckpubnkKeStidXU2alZnQ0d3akdSMmVhb0w0Q3l5OUJ5d25OZ2lKQWc3Mlh0MktMb201WFBoMGJJVi8zOFNELzg2c2grOQpsQVJpb2JtcEpYb29IRVBvUVplSEJKbnlhUHJidzhaNUZ3dlllTjJGVTVwRzlxSDJwb0EvVGU5SXgwR3kzekVlCk0ydUpMMGdYd3dxOWk1am1UOUtNcmkrOVhBdVFSTnJSa0FxNktxTXpiN2RWN0tsaFU2TUhlb04zN1J4ZmdsSEUKS01LME1OUEY3VE5RZ2NNbk5NeE0wcFQ2WXE4aldzM1djYVpGWU1uUkcxWWNuMGd5SU9yVFNCaHVWNkgzU3ZLRwpVd1RSSXlYK1Evc21YckxZRjR3bUllSFJyL2JUV0hNZDNGck50NkRzVFFLQmdRRGpsOTVkUzVSY3Yva2RLQjlGClZybmNyVktYU29ORXZvMUlUZzU3MDY0ZEhYRDdoZ1ZJeWd2eUU1aHdQUm96QnlGM3dxM1pvM3dDTHE5ckRoRDIKMVZxbDZrNjRacTBMcXVBcHl3a0Y0SEozUjJRQ0Vqck9WNDFpdFRTNUlYTG1HWXRSR3VGOEcxMUQ0ZlVlTFlmTwp1ZG1ySTFUT3liNTRpM1NBWUcxYmhDRXEwd0tCZ1FEQ0plbldsSDJpTVYvWVB0TzFHdUxwV3JORTIzMktGcWg2CndYakZPN3NwK2ZCMWhBOHNhd2pNaUVUYTRmTzVsR1NWbW5QWjIzUHlScEo0NnhZM0ZsOXJTb2ovRWNBYUttTXQKQXVvaDJJZnlaeE9sVjUzNUY0d3pyNWI0bXpyNlp3ZGJHenJMeTZZT3FVc294M2MxaVlNTncyVDF4T1BuNzdNNApCR3hRMG8xNUJ3S0JnRGVMNmthRTJybmtWSzFzREczRTQrbmJGMnc3VUZ4bjBWMlRSMityVXpSaDZpQkpMbUw4CmhQdlpFbnhhUFZtMDVOTXczWE5mdGpWbUpZUVFVODJhZHR4Rm1sN2hHRnpmb0lReXZJb0ZwSW8rRDBkK0lZSVkKMWpZQUdkVVJOOVMyNlV5ckxkczNab1RaMGhSQ2NvSGUxQ1F6cEZBdjV0L08wV2svbjVFVloyN25Bb0dCQUpjegpyOG5PRzRvVnFlOWYvc0V0RDB0dHQvQUlnTnpxaUl3UjRWeTZDQ25JM2R5bjNLbGJNcDhZQVlmMk1UcDJ0MTlMCnlxNEFtMncwU2g2aDk4c3ZRV0R0eTRQYTd5RnhvWXVNbVl1Q2QxM3hxUHM4SVd1OVN4TjF6TDRSSnYyYy83MlUKbDFYZ1pKTkdoYUpjdGhxYjNkVDZOOGF3Y0U1Ui8rSEFrQnJoNEF4QkFvR0FQc2VzdCtBUWRxb0ZXRkszcjdwQgpsZUxFdHJxMXJVcEhVRHpJNy9yYlY4MVZJcWpwSCsya3h0eXJPMjJWNENvQXNZYzA4Q0NtdzlIQlE1bUdjcStICnVDWVFXTXFVSXAvQUhDeHlSK3dUNkhoWmFhcndwUWVlTWRTVXFTUVdLekxiTStwbGtORXFnMzhnNi9Sa0NZZzUKLzlKYXZ3akVyWUxqRUJIWnZJZndKRWc9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K
+clusterName: k3s.landilab.com
+clusterRole:
+  name: aqua-kube-enforcer
+  usingPodEnforcer: true
+clusterRoleBinding:
+  name: aqua-kube-enforcer
+container_securityContext: {}
+enforcer:
+  TLS:
+    enabled: false
+    privateKey_fileName: ''
+    publicKey_fileName: ''
+    rootCA_fileName: ''
+    secretName: ''
+    tls_verify: false
+  affinity: {}
+  clusterRole:
+    roleRef: ''
+  dnsPolicy: ClusterFirst
+  enforcerToken: enforcer-token
+  enforcerTokenSecretKey: null
+  enforcerTokenSecretName: null
+  expressMode: false
+  extraEnvironmentVars: {}
+  extraSecretEnvironmentVars: []
+  healthMonitor:
+    enabled: 'true'
+  hostPID: 'true'
+  hostRunPath: null
+  image:
+    pullPolicy: Always
+    repository: enforcer
+    tag: 2022.4.587
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 8096
+    initialDelaySeconds: 60
+    periodSeconds: 30
+  logicalName: null
+  multi_gates:
+    - aqua-gateway1-svc:8443
+    - aqua-gateway2-svc:8443
+  multiple_gateway:
+    enabled: false
+  nameOverride: null
+  nodeName: null
+  nodeSelector: {}
+  podAnnotations: {}
+  podLabels: {}
+  readinessProbe:
+    httpGet:
+      path: /readinessz
+      port: 8096
+    initialDelaySeconds: 60
+    periodSeconds: 30
+  resources: {}
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    capabilities:
+      add:
+        - SYS_ADMIN
+        - NET_ADMIN
+        - NET_RAW
+        - SYS_PTRACE
+        - KILL
+        - MKNOD
+        - SETGID
+        - SETUID
+        - SYS_MODULE
+        - AUDIT_CONTROL
+        - SYSLOG
+        - SYS_CHROOT
+        - SYS_RESOURCE
+        - IPC_LOCK
+    privileged: false
+  serviceAccount:
+    attachImagePullSecret: true
+    create: true
+    name: ''
+  terminationGracePeriodSeconds: '30'
+  tolerations: []
+  vaultAnnotations: null
+  vaultSecret:
+    enabled: false
+    vaultFilepath: ''
+enforcer_ds_name: ''
+extraEnvironmentVars: {}
+extraSecretEnvironmentVars: []
+extraVolumeMounts: []
+extraVolumes: []
+fullnameOverride: aqua-kube-enforcer
+global:
+  dnsNdots: null
+  enforcer:
+    enabled: true
+  gateway:
+    address: aqua-server-gateway-svc.aqua
+    port: 8443
+  imageCredentials:
+    create: true
+    name: aqua-registry
+    password: 0dinNfri3nds!
+    registry: registry.aquasec.com
+    repositoryUriPrefix: registry.aquasec.com
+    username: collin.spears@aquasec.com
+  platform: k3s
+  cattle:
+    systemProjectId: p-l4h79
+hostNetwork: false
+image:
+  pullPolicy: Always
+  repository: kube-enforcer
+  tag: 2022.4.587
+ke_ReplicaCount: '1'
+kubeBench:
+  scanTainted: 'true'
+kubeEnforcerAdvance:
+  enable: false
+  envoy:
+    TLS:
+      listener:
+        enabled: false
+        privateKey_fileName: ''
+        publicKey_fileName: ''
+        rootCA_fileName: ''
+        secretName: envoy-mtls-certs
+    custom_envoy_files: {}
+    image:
+      pullPolicy: Always
+      repository: envoy
+      tag: '2022.4'
+    livenessProbe: {}
+    readinessProbe:
+      exec:
+        command:
+          - cat
+          - /etc/aquasec/envoy/configured
+      initialDelaySeconds: 30
+      periodSeconds: 10
+    resources: {}
+  nodeID: envoy
+kubebenchImage:
+  repository: aquasec/kube-bench
+  tag: v0.7.3
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 8080
+  initialDelaySeconds: 60
+  periodSeconds: 30
+logLevel: ''
+logicalName: ''
+me_ke_custom_registry:
+  enable: false
+  imagePullSecretName: ''
+  registry: ''
+microEnforcerImage:
+  repository: microenforcer
+  tag: 2022.4.587
+nameOverride: aqua-kube-enforcer
+nodeSelector: {}
+pdbApiVersion: null
+podAnnotations: {}
+podDisruptionBudget:
+  minAvailable: 1
+podLabels: {}
+priorityClass:
+  create: false
+  name: ''
+  preemptionPolicy: PreemptLowerPriority
+  value: 1000000
+readinessProbe:
+  httpGet:
+    path: /readyz
+    port: 8080
+  initialDelaySeconds: 60
+  periodSeconds: 30
+resources: {}
+role:
+  name: aqua-kube-enforcer
+roleBinding:
+  name: aqua-kube-enforcer
+securityContext:
+  fsGroup: 11433
+  runAsGroup: 11433
+  runAsUser: 11431
+serviceAccount:
+  attachImagePullSecret: true
+  create: true
+  name: ''
+skipNodes: ''
+starboard:
+  OPERATOR_BATCH_DELETE_DELAY: 10s
+  OPERATOR_BATCH_DELETE_LIMIT: '10'
+  OPERATOR_CIS_KUBERNETES_BENCHMARK_ENABLED: 'false'
+  OPERATOR_CLUSTER_COMPLIANCE_ENABLED: false
+  OPERATOR_CONCURRENT_SCAN_JOBS_LIMIT: '10'
+  OPERATOR_CONFIG_AUDIT_SCANNER_SCAN_ONLY_CURRENT_REVISIONS: true
+  OPERATOR_HEALTH_PROBE_BIND_ADDRESS: ':9090'
+  OPERATOR_LOG_DEV_MODE: 'false'
+  OPERATOR_METRICS_BIND_ADDRESS: ':8080'
+  OPERATOR_NAMESPACE: ''
+  OPERATOR_SCAN_JOB_RETRY_AFTER: 30s
+  OPERATOR_TARGET_NAMESPACES: ''
+  OPERATOR_VULNERABILITY_SCANNER_ENABLED: 'false'
+  affinity: {}
+  appName: starboard-operator
+  automountServiceAccountToken: 'true'
+  clusterRole:
+    name: starboard-operator
+  clusterRoleBinding:
+    name: starboard-operator
+  container_securityContext:
+    allowPrivilegeEscalation: false
+    capabilities:
+      drop:
+        - ALL
+    privileged: false
+    readOnlyRootFilesystem: true
+  enabled: true
+  image:
+    pullPolicy: Always
+    repository: starboard-operator
+    repositoryUriPrefix: docker.io/aquasec
+    tag: 0.15.20
+  livenessProbe:
+    failureThreshold: 10
+    httpGet:
+      path: /healthz/
+      port: probes
+    initialDelaySeconds: 5
+    periodSeconds: 10
+    successThreshold: 1
+  nodeSelector: {}
+  podAnnotations: {}
+  podLabels: {}
+  ports:
+    metricContainerPort: 8080
+    probeCntainerPort: 9090
+  priorityClass:
+    create: false
+    name: ''
+    preemptionPolicy: PreemptLowerPriority
+    value: 1000000
+  readinessProbe:
+    failureThreshold: 3
+    httpGet:
+      path: /readyz/
+      port: probes
+    initialDelaySeconds: 5
+    periodSeconds: 10
+    successThreshold: 1
+  replicaCount: '1'
+  resources: {}
+  securityContext: {}
+  serviceAccount:
+    create: true
+    name: starboard-operator
+  tolerations: []
+tolerations: []
+trivy:
+  appName: trivy-operator
+  enabled: false
+  image:
+    pullPolicy: IfNotPresent
+    registry: docker.io/aquasec
+    repository: trivy-operator
+    secretName: ''
+    tag: 0.20.1
+  livenessProbe:
+    failureThreshold: 10
+    httpGet:
+      path: /healthz/
+      port: probes
+    initialDelaySeconds: 5
+    periodSeconds: 10
+    successThreshold: 1
+  nodeSelector: {}
+  ports:
+    metricContainerPort: 8080
+    probeContainerPort: 9090
+  replicaCount: 1
+  resources: {}
+  securityContext: {}
+  serviceAccount:
+    create: true
+    name: trivy-operator
+vaultAnnotations: null
+vaultSecret:
+  enabled: false
+  vaultFilepath: ''
+webhooks:
+  caBundle: >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFVENDQWZtZ0F3SUJBZ0lVTmhXRGRVb3VwZklhL2F4UWl4MEdOK3hlSGhrd0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSTBNRFl4TXpJeE5EY3dPVm9ZRHpJeQpPVGd3TXpJNU1qRTBOekE1V2pBWE1SVXdFd1lEVlFRRERBeGhaRzFwYzNOcGIyNWZZMkV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUN2ejluZHh3emdjQjlJdjNzTWFnNjhiaFErU2FSaTk3UWMKekFJcC9QSWFNZTdyUEx0eXFGR3J2aXFVNTQ1R25VK3NZSWJNdFU2S2ZEV09QTEZGWGhpdFphcjd6YldTVGswTAowL3hobDJDUWFnSTV3UnR1S3F5bStQU3l1RU44SFNHdjNWZkRHSHBuRkN6T1loNzZpbkQrZ09DQndRR0xmRDNhCjJEbXdDTDFKOXZzSDNaTzI3MklOWEN4N05wWGtmRnEwR2YrNjJ5OHJJSlZuQnRYMXRuOVlwYUpsSzc0cUNBQUwKUFZibUM1VUpKQ211Z254aGtlV24xbWRwV25pOTNnRldpWmZBUnlTZUMvRTdvNFBFQWpSY3QvdHd0TEZSQ0I5bwpDZVdCT0xvZWVpc3RSTUcvd2JueGNPcW5CTkdvNGx3T0d6VHdIZUNTRVhCcTE1NzRjbEIvQWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCU0NaQjVJRFdPNjVhQk4xRkVGRmw5d2wxdk1wekFmQmdOVkhTTUVHREFXZ0JTQ1pCNUkKRFdPNjVhQk4xRkVGRmw5d2wxdk1wekFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFDb0w4YzB1MzJQWVpxTFVTc0Y1bTB0TmF0b3FtZkQxaEZRU0Z5ZGdkcUxRQmdtQWNuU0tTOElXZDJKClBCM1F4bWFBQkZVWURwVDRiQnFPS0UyOTdoS0U3YTNCS0kxNmpZblNaNjk0ZFNOM3A4c1BETjBLNzh4ZC9KNjUKV2NjZktpcnFKSjlSVkkzWFlKYkdpVXVZMWVyVFZ6VFdKR1JBQkJFcDN6bG1La3QrMGlCY0ZSQWoyVWFEQ2JYdwpvemNvYi84YlBsUnpNOTVDSWg0bjQ3bzRhVXNEWmQ2VUtPdFRNUW50d2ZLekRXTHhiWXoxcVIxZ0pvRGM4WHlmCmpBWThYNDUvbmVyc0dOVjdWSWpQaVZTRnFiU2lrWUdDaEFJTTl5TytCZ1lEbnFpTGtuOGdJZ3lzOFRqbEUvcDYKUDJLT0RKbHhFaWZzV1c3Y3FmUFZlelJPL29PeQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+  certManager: false
+  failurePolicy: Ignore
+  mutatingWebhook:
+    annotations: {}
+    enabled: true
+    name: kube-enforcer-me-injection-hook-config
+    namespaceSelector: {}
+    timeout: 2
+  validatingWebhook:
+    annotations: {}
+    enabled: true
+    name: kube-enforcer-admission-hook-config
+    namespaceSelector: {}
+    timeout: 2
