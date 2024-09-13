@@ -13,13 +13,15 @@
 
 - https://obsidian.md/ 
 
-- https://notepad-plus-plus.org/ (Windows)
+- https://notepad-plus-plus.org/ (Windows + OG)
 
 ## Windows Managers - for a organized desktop. 
 
 - https://rectangleapp.com/ (MacOS) 
 
 - https://learn.microsoft.com/en-us/windows/powertoys/ (Windows)
+
+- https://github.com/dwarvesf/hidden
 
 ## More Specialized Tools (Terminal, IDE, etc)
 
