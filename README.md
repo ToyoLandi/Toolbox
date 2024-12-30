@@ -2,45 +2,26 @@
 > This repo is a general collection of tools, notes, and other things I use in my day-job(s) outside of any Org. 
 > You've got to pack lightly, if you want to travel far. 
 
-OVERVIEW: 
+"landilab" dir contains home-lab notes, topo, and a handful of deployment chart examples.
+  
+"bookmarks-x-y" are backups of my bookmarks for X org, for Y browser.
 
-"landilab" --> Contains home-lab notes, topo, and a handful of deployment chart examples.
 
-"bookmarks-x-y" --> Backups of my bookmarks for X org, for Y browser.
-
----
-
-### Text Editors - viewing logs and taking notes.
+## Text Editors - viewing logs and taking notes.
 
 - https://www.sublimetext.com/ 
 
 - https://obsidian.md/ 
 
-- https://notepad-plus-plus.org/ (Windows + OG)
+- https://notepad-plus-plus.org/ (Windows)
 
-  #### Sublime Text Plugins
-
-  - https://packagecontrol.io/packages/Pretty%20JSON
-
-  - https://packagecontrol.io/packages/MarkdownLivePreview
-
-  - https://packagecontrol.io/packages/Pretty%20YAML
-
-  - https://packagecontrol.io/packages/gruvbox
-
----
-
-### Windows Managers - for a organized desktop. 
+## Windows Managers - for a organized desktop. 
 
 - https://rectangleapp.com/ (MacOS) 
 
 - https://learn.microsoft.com/en-us/windows/powertoys/ (Windows)
 
-- https://github.com/dwarvesf/hidden
-
----
-
-### More Specialized Tools (Terminal, IDE, etc)
+## More Specialized Tools (Terminal, IDE, etc)
 
 - https://iterm2.com/ 
 
@@ -52,9 +33,7 @@ OVERVIEW:
 
 - https://code.visualstudio.com/
 
----
-
-### Kubernetes/Containerization & Other Lab Tools
+## Kubernetes/Containerization & Other Lab Tools
 
 - https://k9scli.io/ 
 
@@ -66,8 +45,6 @@ OVERVIEW:
 
 - https://docs.docker.com/compose/
 
----
-
-## Themes
+# Themes
 
 - https://vimcolorschemes.com/

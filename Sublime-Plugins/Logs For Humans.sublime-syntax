@@ -1,0 +1,193 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+file_extensions:
+  - log
+  - txt
+scope: source.LogsForHumans
+contexts:
+  main:
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+    - match: '"'
+      scope: punctuation.definition.string.begin.LogsForHumans
+      push: double_quoted_string
+
+    # Comments begin with a '//' and finish at the end of the line
+    - match: '//'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: line_comment
+
+    # Keywords are if, else for and while.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+    - match: '\b(if|else|for|while|set)\b'
+      scope: variable.other.constant.LogsForHumans
+
+
+    # =-=-= BEGIN Logs for Humans CODE for main =-=-=
+    # =-= "'" =-=
+    - match: "'"
+      scope: punctuation.definition.string.begin.LogsForHumans
+      push: single_quoted_string
+
+    # =-= Timestamp Mk.I =-=
+    - match: '\b\d\d:\d\d:\d\d.\d\d\d\d\d\d\b'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: timestamps
+
+    # =-= Timestamp Mk.II =-=
+    - match: '\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\dZ\b'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: timestamps
+
+    # =-= Timestamp Mk.III =-=
+    - match: '\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\dZ\b'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: timestamps
+
+    # =-= Timestamp Mk.III =-=
+    - match: '\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\dZ\b'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: timestamps
+
+    # =-= Timestamp Mk.IV =-=
+    - match: '\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d'
+      scope: punctuation.definition.comment.LogsForHumans
+      push: timestamps
+
+
+    # =-= INFO Logger Mk.I=-=
+    # ex. I0924
+    # From -> I0924 18:50:22.456437 14335 enginemanagerimpl.cpp:880] Setting job priority to -1
+    - match: '\bI\d\d\d\d\b'
+      scope: entity.other.namespace-prefix.LogsForHumans
+      push: info-logger
+
+    # =-= INFO Logger Mk.II=-=
+    - match: 'INFO'
+      scope: entity.other.namespace-prefix.LogsForHumans
+
+    # =-= WARN Logger Mk.I=-=
+    - match: 'WARN'
+      scope: markup.changed.LogsForHumans
+
+    # =-= DEBUG Logger Mk.I=-=
+    - match: 'DEBUG'
+      scope: constant.character.LogsForHumans
+
+    # =-= ERROR Logger =-=
+    - match: '\bE\d\d\d\d\b'
+      scope: message.error.LogsForHumans
+      push: error-logger
+
+    # =-= ERROR Logger Mk.II =-=
+    - match: 'ERROR'
+      scope: message.error.LogsForHumans
+      push: error-logger
+
+    # =-= "Error" =-=
+    - match: '\b\w*[E-e]rror\w*'
+      scope: message.error.LogsForHumans
+      push: error-logger
+
+    # =-= "xyz.cpp" =-=
+    - match: '\b\w*.cpp'
+      scope: support.function.LogsForHumans
+
+    # =-= "xyz.go" =-=
+    - match: '\b\w*.go'
+      scope: support.function.LogsForHumans
+
+    # =-= "abc/xyz.go" =-=
+    - match: '\b\w*\/\w*.go'
+      scope: support.function.LogsForHumans
+
+
+    # =-= "Bitbucket StackTrace" =-=
+    - match: '^.*bitbucket.*$'
+      scope: markup.deleted
+
+    # =-= "Fail/ed" =-=
+    - match: '\b\w*[F-f]ail\w*'
+      scope: message.error.LogsForHumans
+      push: error-logger
+
+    # =-= Numbers =-=
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.LogsForHumans
+
+    # =-= "]" =-=
+    - match: ']'
+      scope: punctuation.separator.LogsForHumans
+
+    # =-= "]" =-=
+    - match: '\['
+      scope: punctuation.separator.LogsForHumans
+
+    # =-= "{" =-=
+    - match: '}'
+      scope: punctuation.separator.LogsForHumans
+
+    # =-= "}" =-=
+    - match: '{'
+      scope: punctuation.separator.LogsForHumans
+
+    # =-= ":" =-=
+    - match: ':'
+      scope: punctuation.separator.LogsForHumans
+
+    # =-= "=" =-=
+    - match: '='
+      scope: punctuation.separator.LogsForHumans
+
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.LogsForHumans
+    - match: '\\.'
+      scope: constant.character.escape.LogsForHumans
+    - match: '"'
+      scope: punctuation.definition.string.end.LogsForHumans
+      pop: true
+    - match: "$"
+      scope: punctuation.definition.string.end.LogsForHumans
+      pop: true
+
+  line_comment:
+    - meta_scope: comment.line.LogsForHumans
+    - match: $
+      pop: true
+
+  # =-=-= BEGIN Logs for Humans CODE for pushed context =-=-=
+  single_quoted_string:
+    - meta_scope: string.quoted.double.LogsForHumans
+    - match: '\\.'
+      scope: string.LogsForHumans
+    - match: "'"
+      scope: punctuation.definition.string.end.LogsForHumans
+      pop: true
+    - match: "$"
+      scope: punctuation.definition.string.end.LogsForHumans
+      pop: true
+
+  timestamps:
+    - meta_scope: constant.numeric.line-number
+    - match: '\b'
+      scope: punctuation.definition.comment.LogsForHumans
+      pop: true
+
+  info-logger:
+    - meta_scope: entity.other.namespace-prefix.LogsForHumans
+    - match: '\b'
+      scope: constant.character.escape.LogsForHumans
+      pop: true
+
+  error-logger:
+    - meta_scope: message.error
+    - match: '\b'
+      scope: constant.character.escape.LogsForHumans
+      pop: true
+
+
