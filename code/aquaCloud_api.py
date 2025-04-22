@@ -43,8 +43,8 @@ AQUA_URL = 'https://abcd1234.cloud.aquasec.com'         # See NOTE above.
 API_URL = "https://api.cloudsploit.com"
 SCS_URL = "https://codesec.aquasec.com"
 AQUA_CSP_ROLE = "cspears-test-role"                     # CRITICAL
-API_KEY = 'MiUUcWg4COpfKaCNBQcdYE'                      # CRITICAL
-API_SECRET = '5BfzSn4EQX8RsHrPAo3RCXg7TluraTyWSAL'      # CRITICAL
+API_KEY = ''                      # CRITICAL
+API_SECRET = ''      # CRITICAL
 
 
 def auth_headers(url: str, method: str, payload: str = "") -> dict:
